@@ -1,40 +1,53 @@
 # Fatih Altiok — AI Systems Builder
 
-**Offenbach · Raum Frankfurt**
+**Offenbach · Raum Frankfurt · Remote**
 
 Ich baue autonome KI-Systeme die tatsächlich in Produktion laufen.
 
-Kein klassischer Softwareentwickler — ich denke Systeme, orchestriere KI-Modelle und bringe Automatisierung in den Alltag. Seit über einem Jahr entwickle ich **Timus**, ein autonomes Multi-Agent-System das selbstständig Aufgaben ausführt, Browser und Desktop steuert, per Telegram kommuniziert und rund um die Uhr läuft.
+Kein klassischer Softwareentwickler — ich denke in Systemen, orchestriere KI-Modelle und bringe Automatisierung in den Alltag.
+Seit über einem Jahr entwickle ich **Timus**, ein selbst-überwachendes, selbst-heilendes Multi-Agent-System das eigenständig denkt, handelt und aus Fehlern lernt.
 
 Offen für: **Freelance-Projekte** · **KI-Integration** · **Prozessautomatisierung**
 
 ---
 
-## Hauptprojekt: Timus
-
-> Autonomes Multi-Agent-System · 7 spezialisierte KI-Agenten · 50+ Tools · läuft als systemd-Service
+## Hauptprojekt: Timus — Autonomes Multi-Agent-System
 
 **[→ github.com/fatihaltiok/Agentus-Timus](https://github.com/fatihaltiok/Agentus-Timus)**
 
-Was Timus kann:
-- Aufgaben aus einer priorisierten Queue **selbstständig abarbeiten** — auch unbeaufsichtigt
-- Per **Telegram** steuern: Text, Sprache (Whisper STT), Bilder, Dokumente
-- **Browser und Desktop** autonom bedienen — Screenshots, Klicks, Formulare, Navigation
-- **Tiefenrecherchen** durchführen und strukturierte Berichte erstellen
-- **Bilder generieren** (DALL-E 3), Code schreiben, Systeme überwachen
-- **Echtzeit-Monitoring** im Browser — Canvas-UI mit Live-Agent-LEDs und Chat
+> 8 spezialisierte KI-Agenten · 60+ Tools · Android-App · Lean 4 Verifikation · läuft 24/7 als systemd-Service
 
 ```
-Telegram → TelegramGateway → SQLite TaskQueue → AutonomousRunner
-                                                       ↓
-                              7 Agenten (OpenAI · Anthropic · DeepSeek · lokal)
-                                                       ↓
-                              MCP-Server · 50+ Tools · systemd · Port 5000
+Android App (Chat · Voice · GPS · AccessibilityService)
+       ↓
+TelegramGateway  ←→  MCP-Server (FastAPI · Port 5000)
+                              ↓
+          Meta-Agent (R1/R2: Rezepte · Handoffs · Outcome-Lernen)
+                    ↙         ↓         ↘
+          Executor   Research   Reasoning   Visual   Shell   ...
+                              ↓
+          60+ Tools · Qdrant Semantic Memory · SQLite · Playwright
+                              ↓
+          Autonomy Runner · Self-Modification SM1–SM7 · Self-Healing
 ```
 
-**Stack:**
-`Python` `FastAPI` `asyncio` `SQLite` `Playwright` `PyAutoGUI`
-`OpenAI API` `Anthropic API` `Florence-2` `Whisper` `Telegram Bot API` `systemd` `Linux`
+### Was Timus kann
+
+- **Eigeninitiative (M15):** Beobachtet E-Mails, Dateien, Systemzustand — handelt ohne Auftrag
+- **Self-Modification (SM1–SM7):** Schreibt, verifiziert und deployed eigene Code-Änderungen kontrolliert
+- **Evidence-gated Selbstdiagnose:** Antwortet über eigenen Zustand nur mit verifizierten Belegen (`[BELEGT]` / `[TEILWEISE BELEGT]` / `[NICHT BELEGT]`)
+- **Session-Reflexion (M8):** Analysiert jede Session und leitet Verbesserungen ab
+- **Lernfähigkeit (M16):** Gewichtet eigene Aktionen nach echtem Nutzer-Feedback (👍/👎)
+- **Android-App:** Kotlin + Jetpack Compose — Chat, Stimme (Whisper), GPS, AccessibilityService
+- **Tiefenrecherchen:** Deep Research v8.0 mit Evidence Engine, ArXiv, DataForSEO, SerpAPI
+- **Formale Verifikation:** 83 Lean 4 Theoreme + Hypothesis Property-Tests + CrossHair Contracts
+
+### Stack
+
+`Python` `FastAPI` `asyncio` `Kotlin` `Jetpack Compose`
+`OpenAI` `Anthropic` `DeepSeek` `Gemini` `lokale Modelle`
+`Qdrant` `SQLite` `Playwright` `Lean 4` `Hypothesis` `CrossHair`
+`Telegram Bot API` `systemd` `Linux`
 
 ---
 
@@ -42,21 +55,24 @@ Telegram → TelegramGateway → SQLite TaskQueue → AutonomousRunner
 
 | Bereich | Konkret |
 |---|---|
-| **KI-Automatisierung** | Wiederkehrende Prozesse mit KI-Agenten automatisieren |
+| **KI-Automatisierung** | Wiederkehrende Prozesse mit autonomen Agenten dauerhaft eliminieren |
 | **LLM-Integration** | OpenAI, Anthropic, lokale Modelle in bestehende Systeme einbinden |
-| **Browser-/Desktop-Automation** | Formulare, Portale, Datenpflege automatisch erledigen |
-| **Telegram-Bots & KI-Assistenten** | Unternehmens-Bots die echte Aufgaben ausführen |
-| **Prototypen & MVPs** | Schnelle KI-Lösungen von der Idee bis zum laufenden System |
+| **Multi-Agent-Systeme** | Komplexe Workflows auf spezialisierte Agenten aufteilen |
+| **Browser-/Desktop-Automation** | Formulare, Portale, Datenpflege vollautomatisch |
+| **Android KI-Apps** | Kotlin-Apps mit Sprache, GPS und On-Device-Intelligenz |
+| **Prototypen & MVPs** | Von der Idee zum laufenden System — schnell und solide |
 
 ---
 
 ## Mein Ansatz
 
-Ich nutze KI als Werkzeug — nicht als Ersatz für Denken.
-Architektur, Entscheidungen, Debugging und Produktionsreife: das ist meine Arbeit.
-Den Code erstelle ich zu großen Teilen KI-gestützt — konzipiert, bewertet und verantwortet von mir.
+Kein formaler IT-Abschluss. Kein Team. Kein VC.
 
-Das ist keine Einschränkung. Es ist die Arbeitsweise die Ergebnisse liefert.
+Ein selbst-überwachendes, selbst-heilendes, selbst-reflektierendes Multi-Agent-System
+mit physischer Sensorik, eigener Stimme und dynamischer Persönlichkeit — in Python.
+
+Architektur, Entscheidungen, Debugging und Produktionsreife: das ist meine Arbeit.
+Den Code erstelle ich KI-gestützt — konzipiert, bewertet und verantwortet von mir.
 
 ---
 
