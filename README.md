@@ -51,6 +51,17 @@ TelegramGateway  ←→  MCP-Server (FastAPI · Port 5000)
 
 ---
 
+## Weitere Projekte
+
+| Projekt | Kurz | Stack |
+|---|---|---|
+| **[multiagent-consistent-story-creator](https://github.com/fatihaltiok/multiagent-consistent-story-creator)** `v1.0.0` | Agentisches System für **konsistente illustrierte Geschichten & Videos** — Soul-ID-Identitätstreue (ArcFace), autoregressive Frame-Kette, eigenes Memory, Live-UI | LangGraph · FastAPI · OpenRouter · gpt-image |
+| **[aero-sense](https://github.com/fatihaltiok/aero-sense)** | Predictive Maintenance & **Live Process Twin** (3D) | Next.js · FastAPI · React Three Fiber · Isolation Forest |
+| **[timus-nano](https://github.com/fatihaltiok/timus-nano)** | Lokales KI-Wissenssystem — RAG, Websuche, Deep-Research-Agent | Gemma · RAG · Python |
+| **[voice-ai-desktop](https://github.com/fatihaltiok/voice-ai-desktop-)** | Desktop-App: Sprache → Transkription → KI-Ergebnis | Python · Whisper |
+
+---
+
 ## Was ich anbiete
 
 | Bereich | Konkret |
